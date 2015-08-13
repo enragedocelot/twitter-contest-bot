@@ -39,7 +39,7 @@ def UpdateQueue():
 
 # Check if a post requires you to follow the user.
 def CheckForFollowRequest(item):
-    text = item['text']
+    	text = item['text']
     if "follow" in text.lower():
         user = item['user']
         screen_name = user['screen_name']
